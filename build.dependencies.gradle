@@ -2,6 +2,7 @@ repositories {
     mavenCentral()
     google() // Needed for androidx
     maven { url = 'https://maven.brott.dev/' }
+    maven { url= 'https://maven.pedropathing.com/' }
     flatDir {
         dirs rootProject.file('libs')
     }
@@ -20,6 +21,10 @@ dependencies {
     runtimeOnly 'org.tensorflow:tensorflow-lite:2.12.0'
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'org.firstinspires.ftc:Vision:9.0.1'
+
+    //pedro pathing
+    implementation 'com.pedropathing:pedro:[VERSION]'
+    implementation 'com.acmerobotics.dashboard:dashboard:0.4.16'
 
     implementation 'com.acmerobotics.dashboard:dashboard:0.4.14'
 
